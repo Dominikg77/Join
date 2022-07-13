@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin-left: 300px;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.titel-1 h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: -5px;
+}
+
+.titel-1 p {
+    color: rgb(93, 93, 93);
+    font-size: 18px;
+}
