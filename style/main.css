@@ -8,6 +8,15 @@ body {
     padding-left: 50px;
 }
 
+.add-task-container{
+    margin-left: 332px;
+    margin-top: 32px;
+    margin-right: 32px;
+    background-color: #f2e8f094;
+    height: 450px;
+    border-radius: 29px;
+}
+
 .titel-1 h3 {
     font-size: 30px;
     font-weight: bolder;
