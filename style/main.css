@@ -17,6 +17,21 @@ body {
     border-radius: 29px;
 }
 
+.add-task-1-raw {
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-task-2-raw {
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-task-3-raw {
+    display: flex;
+    justify-content: space-around;
+}
+
 .titel-1 h3 {
     font-size: 30px;
     font-weight: bolder;
