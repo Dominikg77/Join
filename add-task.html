@@ -28,41 +28,50 @@
             </div>
         </div>
 
+        <!-- Container für die Eingaben -->
         <div class="add-task-container">
-            <div class="add-task-title">
+
+                <!-- Titel -->
+            <div class="add-task-content"> 
                 <div>
                     <h3>TITLE</h3>
                 </div>
                 <div>
-                    <input placeholder="Your Title...">
+                    <input class="add-takt-input-select" placeholder="Your Title...">
                 </div>
             </div>
-            <div class="add-task-date">
+
+                <!-- Datum -->
+            <div class="add-task-content"> 
                 <div>
                     <h3>DUE DATE</h3>
                 </div>
                 <div>
-                    <input type="date">
+                    <input class="add-takt-input-select" type="date">
                 </div>
             </div>
-            <div class="add-task-category">
+
+                <!-- Kategorie -->
+            <div class="add-task-content">
                 <div>
                     <h3>CATEGORY</h3>
                 </div>
                 <div>
-                    <select placeholder="CATEGORY">
+                    <select class="add-takt-input-select" placeholder="CATEGORY">
                         <option>Marketing</option>
                         <option>Development</option>
                         <option>Design</option>
                     </select>
                 </div>
             </div>
-            <div class="add-task-urgency">
+
+                <!-- Gewichtigkeit der Relevanz -->
+            <div class="add-task-content">
                 <div>
                     <h3>URGENCY</h3>
                 </div>
                 <div>
-                    <select>
+                    <select class="add-takt-input-select">
                         <option>High</option>
                         <option>Middle</option>
                         <option>Low</option>
@@ -70,16 +79,29 @@
                     </select>
                 </div>
             </div>
-            <div class="add-task-description">
+
+                <!-- Beschreibung -->
+            <div class="add-task-content">
                 <div>
                     <h3>DESCRIPTION</h3>
                 </div>
                 <div>
-                    <textarea name="Description" id="" cols="40" rows="5"></textarea>
+                    <textarea class="add-takt-input-select" name="Description" id="" cols="40" rows="5"></textarea>
                 </div>
             </div>
-            <div class="add-task-assigned">
 
+                <!-- Zuweisung an -->
+            <div class="add-task-content">
+                <div><h3>ASSIGNED TO</h3></div>
+                <div>
+                    <div class="assigned-to-imgs">
+                        <img class="add-taskk-img" src="img/example-img.PNG" alt=""><img class="add-task-plus" src="img/icon plus.png" alt="">
+                    </div>
+                    <div>
+                        <button>CANCEL</button>
+                        <button>CREATE TASK</button>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
