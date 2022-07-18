@@ -29,36 +29,40 @@
         </div>
 
         <div class="add-task-container">
-            <div class="add-task-1-raw">
+            <div class="add-task-title">
                 <div>
-                    <div>
-                        Title
-                    </div>
-                    <input class="" id="" placeholder="Your Title">
+                    <h3>TITLE</h3>
                 </div>
                 <div>
-                    <div>
-                        Date
-                    </div>
-                    <input type="datetime-local" name="" id="">
+                    <input placeholder="Your Title...">
                 </div>
             </div>
-            <div class="add-task-2-raw">
+            <div class="add-task-date">
                 <div>
-                    <div>
-                        Category
-                    </div>
-                    <select id="category" placeholder="Kategorie">
+                    <h3>DUE DATE</h3>
+                </div>
+                <div>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="add-task-category">
+                <div>
+                    <h3>CATEGORY</h3>
+                </div>
+                <div>
+                    <select placeholder="CATEGORY">
                         <option>Marketing</option>
                         <option>Development</option>
                         <option>Design</option>
                     </select>
                 </div>
+            </div>
+            <div class="add-task-urgency">
                 <div>
-                    <div>
-                        Urgency
-                    </div>
-                    <select id="urgency" placeholder="Kategorie">
+                    <h3>URGENCY</h3>
+                </div>
+                <div>
+                    <select>
                         <option>High</option>
                         <option>Middle</option>
                         <option>Low</option>
@@ -66,27 +70,16 @@
                     </select>
                 </div>
             </div>
-            <div class="add-task-3-raw">
+            <div class="add-task-description">
                 <div>
-                    <div>
-                        Description
-                    </div>
-                    <input type="text">
+                    <h3>DESCRIPTION</h3>
                 </div>
                 <div>
-                    <div>
-                        Assigned to
-                    </div>
-                    <div>
-                        <img src="img/icon plus.png" alt="">
-                        <!-- Img by User and added function -->
-                    </div>
-                    <div>
-                        <!-- "cancel" and "create tasks buttons" -->
-                        <button>CANCEL</button>
-                        <button>CREATE TASK</button>
-                    </div>
+                    <textarea name="Description" id="" cols="40" rows="5"></textarea>
                 </div>
+            </div>
+            <div class="add-task-assigned">
+
             </div>
         </div>
     </body>

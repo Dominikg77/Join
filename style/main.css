@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+h3 {
+    color: #22318B;
+}
+
 .container {
     margin-left: 300px;
     padding-top: 100px;
@@ -17,20 +21,7 @@ body {
     border-radius: 29px;
 }
 
-.add-task-1-raw {
-    display: flex;
-    justify-content: space-around;
-}
 
-.add-task-2-raw {
-    display: flex;
-    justify-content: space-around;
-}
-
-.add-task-3-raw {
-    display: flex;
-    justify-content: space-around;
-}
 
 .titel-1 h3 {
     font-size: 30px;
