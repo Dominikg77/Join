@@ -29,83 +29,85 @@
         </div>
 
         <!-- Container für die Eingaben -->
-        <div class="add-task-container bg">
+        <form onsubmit="addTask()">
+            <div class="add-task-container bg">
 
-            <!-- Titel -->
-            <div class="add-task-content">
-                <div>
-                    <h3>TITLE</h3>
+                <!-- Titel -->
+                <div class="add-task-content">
+                    <div>
+                        <h3>TITLE</h3>
+                    </div>
+                    <div>
+                        <input class="add-takt-input-select" id="add_task_title" placeholder="Your Title...">
+                    </div>
                 </div>
-                <div>
-                    <input class="add-takt-input-select" placeholder="Your Title...">
-                </div>
-            </div>
 
-            <!-- Datum -->
-            <div class="add-task-content">
-                <div>
-                    <h3>DUE DATE</h3>
+                <!-- Datum -->
+                <div class="add-task-content">
+                    <div>
+                        <h3>DUE DATE</h3>
+                    </div>
+                    <div>
+                        <input class="add-taskt-input-select" id="add_task_date" type="date">
+                    </div>
                 </div>
-                <div>
-                    <input class="add-takt-input-select" type="date">
-                </div>
-            </div>
 
-            <!-- Kategorie -->
-            <div class="add-task-content">
-                <div>
-                    <h3>CATEGORY</h3>
-                </div>
-                <div>
-                    <select class="add-takt-input-select" placeholder="CATEGORY">
+                <!-- Kategorie -->
+                <div class="add-task-content">
+                    <div>
+                        <h3>CATEGORY</h3>
+                    </div>
+                    <div>
+                        <select class="add-taskt-input-select" id="add_task_category" placeholder="CATEGORY">
                         <option>Marketing</option>
                         <option>Development</option>
                         <option>Design</option>
                     </select>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Gewichtigkeit der Relevanz -->
-            <div class="add-task-content">
-                <div>
-                    <h3>URGENCY</h3>
-                </div>
-                <div>
-                    <select class="add-takt-input-select">
+                <!-- Gewichtigkeit der Relevanz -->
+                <div class="add-task-content">
+                    <div>
+                        <h3>URGENCY</h3>
+                    </div>
+                    <div>
+                        <select class="add-taskt-input-select" id="add_task_urgency">
                         <option>High</option>
                         <option>Middle</option>
                         <option>Low</option>
                         <option>None</option>
                     </select>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Beschreibung -->
-            <div class="add-task-content">
-                <div>
-                    <h3>DESCRIPTION</h3>
-                </div>
-                <div>
-                    <textarea class="add-takt-input-select" name="Description" id="" cols="40" rows="5"></textarea>
-                </div>
-            </div>
-
-            <!-- Zuweisung an -->
-            <div class="add-task-content">
-                <div>
-                    <h3>ASSIGNED TO</h3>
-                </div>
-                <div>
-                    <div class="assigned-to-imgs">
-                        <img class="add-taskk-img" src="img/example-img.PNG" alt=""><img class="add-task-plus" src="img/icon plus.png" alt="">
+                <!-- Beschreibung -->
+                <div class="add-task-content">
+                    <div>
+                        <h3>DESCRIPTION</h3>
                     </div>
                     <div>
-                        <button>CANCEL</button>
-                        <button>CREATE TASK</button>
+                        <textarea class="add-takt-input-select" name="Description" is="add_task_description" cols="40" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <!-- Zuweisung an -->
+                <div class="add-task-content">
+                    <div>
+                        <h3>ASSIGNED TO</h3>
+                    </div>
+                    <div>
+                        <div class="assigned-to-imgs">
+                            <img class="add-taskk-img" id="add_task_profile" src="img/example-img.PNG" alt=""><img class="add-task-plus" src="img/icon plus.png" alt="">
+                        </div>
+                        <div>
+                            <button onclick="deleteInputValue()">CANCEL</button>
+                            <button>CREATE TASK</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </body>
 
 </html>
