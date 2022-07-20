@@ -65,15 +65,3 @@ li:hover {
     font-weight: bolder;
     font-size: 18px;
 }
-
-.icon-url {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
-}
-
-.icon-url a {
-    margin-top: 5px;
-}
