@@ -1,0 +1,512 @@
+body {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #22318B;
+    display: none;
+}
+
+.fontS20 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.flipped {
+    direction: rtl;
+}
+
+
+/* Content */
+
+.mainContainer {
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+.categoryMain {
+    position: absolute;
+    left: 0;
+    margin-left: 320px;
+}
+
+.detailsMain {
+    position: absolute;
+    left: 0;
+    margin-left: 500px;
+}
+
+.dueDateMain {
+    position: absolute;
+    right: 0;
+    margin-right: 80px;
+}
+
+.DateToBeShown {
+    cursor: pointer;
+}
+
+.inputfieldDate {
+    border: none;
+    border-radius: 5px;
+}
+
+.pushMain {
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+}
+
+.todoContainer {
+    position: relative;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #d6d5dc;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 20px 0px;
+    margin-left: 50px;
+    min-height: 88px
+}
+
+.todoContainer:hover {
+    background-color: #bdbdbd;
+    transition: all 225ms ease-in-out;
+}
+
+
+/* Catogery colors */
+
+.High {
+    border: 3px solid rgb(255, 147, 147)!important;
+}
+
+.Intermediate {
+    border: 3px solid rgb(255 231 97 / 84%) !important;
+}
+
+.Low {
+    border: 3px solid rgba(65, 170, 30, 0.5)!important;
+}
+
+.EditAndEmployeeContainer {
+    position: relative;
+    display: flex;
+}
+
+.employeeContainer {
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
+}
+
+.employeeContainer img {
+    width: 60px;
+    border-radius: 50%;
+    border: white solid 4px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.employeeImg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.employeeImg img {
+    width: 60px;
+    border-radius: 50%;
+    border: white solid 4px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.hover {
+    transition: all 225ms ease-in-out;
+    cursor: pointer;
+}
+
+.hover:hover {
+    transform: translateY(-15px) scaleY(1.2) scaleX(1.2);
+    transition: all 200ms ease-in-out;
+    box-shadow: 1px 18px 7px 0px grey;
+}
+
+.catogeryTasks {
+    position: absolute;
+    left: 0;
+    margin-left: 310px;
+}
+
+
+/* .ctg {
+    width: 65%;
+    text-align: left;
+} */
+
+.detailsTasks {
+    position: absolute;
+    left: 0;
+    margin-left: 490px;
+    padding-left: 8px;
+    text-align: left;
+    align-items: center;
+    width: 400px;
+    height: 120px;
+    overflow-y: auto;
+    word-break: break-all;
+}
+
+.detailsTasks:hover {
+    cursor: pointer;
+}
+
+.p-top {
+    padding-top: 50px;
+}
+
+.edit-img {
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    transition: all 225ms ease-in-out;
+}
+
+.pencil1 {
+    width: 15px;
+    position: absolute;
+    top: 30px;
+    left: 7px;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+}
+
+
+/* .pencil1:hover {
+    transform: scaleX(1.1)scaleY(1.1) translateY(5px);
+    transition: all 225ms ease-in-out;
+    text-shadow: 6px -8px 2px grey;
+}
+
+.pencil3:hover {
+    transform: scaleX(1.1)scaleY(1.1) translateY(5px);
+    transition: all 225ms ease-in-out;
+    text-shadow: 6px -8px 2px grey;
+} */
+
+.pencil2 {
+    width: 15px;
+    position: absolute;
+    top: -20px;
+    cursor: pointer;
+    /* transition: all 225ms ease-in-out; */
+}
+
+.pencil3 {
+    width: 15px;
+    cursor: pointer;
+    /* transition: all 225ms ease-in-out; */
+    position: absolute;
+    left: 10px;
+    top: -15px;
+}
+
+.edit-img:hover {
+    transform: translateY(-6px) scaleY(1.2) scaleX(1.2);
+    background-color: #f7f3f3a6;
+    padding: 5px;
+    transition: all 225ms ease-in-out;
+    border-radius: 10%;
+    box-shadow: 0px 8px 5px 2px grey;
+}
+
+.change {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 120px;
+}
+
+.inputField {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 8px;
+    height: calc(100% - 50px);
+    width: calc(100% - 16px);
+    text-align: left;
+    border: 0px solid;
+    border-radius: 8px;
+    resize: none;
+    overflow-y: auto;
+    z-index: 1;
+    background-color: #eaeaea;
+}
+
+.buttons {
+    position: absolute;
+    left: 0;
+    display: flex;
+    margin-top: 84px;
+}
+
+.buttonSave {
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 60px;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.buttonSave:hover {
+    cursor: pointer;
+}
+
+.buttonAbort {
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 60px;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.buttonAbort:hover {
+    cursor: pointer;
+}
+
+.dueDateTasks {
+    position: absolute;
+    right: 0;
+    margin-right: 80px;
+}
+
+.deleteContainer {
+    position: absolute;
+    bottom: 16px;
+    right: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 12px;
+    color: red;
+    text-align: center;
+}
+
+.editEmployees {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 6px;
+    bottom: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 12px;
+    color: #22318b;
+    text-align: center;
+    transition: all 225ms ease-in-out;
+}
+
+.editEmployees:hover {
+    transform: scaleX(1.1)scaleY(1.1) translateY(5px);
+    transition: all 225ms ease-in-out;
+    text-shadow: 6px -8px 2px grey;
+}
+
+.pushToBoard {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin-right: 8px;
+    margin-right: 8px;
+    height: 35px;
+    transition: all 225ms ease-in-out;
+    border-radius: 100%;
+    background-color: #f7f3f3a6;
+    z-index: 0;
+}
+
+.pushToBoard:hover {
+    cursor: pointer;
+    transform: translateY(5px);
+    transition: all 225ms ease-in-out;
+    box-shadow: 0px -10px 4px 0px grey;
+}
+
+.trash-bin {
+    width: 25px;
+    transition: all 225ms ease-in-out;
+}
+
+.trash-bin:hover {
+    transform: translateY(-6px) scaleY(1.2) scaleX(1.2);
+    background-color: #f7f3f3a6;
+    padding: 5px;
+    transition: all 225ms ease-in-out;
+    border-radius: 100%;
+    box-shadow: 0px 8px 5px 2px grey;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1450px) {
+    .detailsTasks {
+        width: 350px;
+    }
+    .change {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .detailsTasks {
+        width: 250px;
+    }
+    .change {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .detailsTasks {
+        max-width: 170px;
+    }
+    .change {
+        width: 170px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .responsive {
+        display: flex;
+    }
+    .hideCont {
+        display: none;
+    }
+    .mainContainer {
+        margin-top: 0;
+    }
+    .todoContainer {
+        height: fit-content !important;
+        min-height: fit-content;
+        flex-direction: column;
+        margin-top: 0px !important;
+        margin-bottom: 50px !important;
+        margin-left: 22px !important;
+        margin-top: 70px;
+        transition: all 115ms ease-in-out;
+        margin-bottom: 0;
+    }
+    .assignedToTasks {
+        position: absolute;
+        top: 0;
+        margin-top: 16px;
+    }
+    .pushToBoard {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+    .employeeContainer {
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: visible;
+        width: 100%;
+        padding: 20px;
+    }
+    .editEmployees {
+        top: -325px;
+        bottom: 1px;
+    }
+    .catogeryTasks {
+        position: relative;
+        margin-left: 0;
+        margin-bottom: 32px;
+        top: 0;
+    }
+    .detailsTasks {
+        position: relative;
+        margin-left: 0;
+        margin-bottom: 32px;
+        margin-right: 0px;
+        text-align: center;
+        align-items: center;
+        overflow-y: auto;
+        width: none;
+        min-width: 260px;
+        height: 120px;
+    }
+    .change {
+        width: 100%;
+        height: 100%;
+    }
+    .inputField {
+        top: 0;
+        margin-top: 8px;
+    }
+    .buttons {
+        margin-top: 90px;
+        left: auto;
+        right: auto;
+    }
+    .dueDateTasks {
+        position: relative;
+        margin-right: 0px;
+    }
+    .edit-img {
+        left: 130px;
+    }
+    .pencil1 {
+        left: 105px;
+    }
+    .dueDateTasks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pencil2 {
+        position: relative;
+        top: 0;
+        left: -31px;
+    }
+    .pencil3 {
+        top: 25px;
+    }
+    .pencil1,
+    .pencil2,
+    .pencil3 {
+        width: 15px;
+    }
+    .employeeContainer img {
+        margin: 0px 10px;
+    }
+}

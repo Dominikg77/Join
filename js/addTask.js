@@ -6,13 +6,13 @@ let currenMinutes = date.getMinutes();
 currentHours = ("0" + currentHours).slice(-2);
 let today = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear() + ' || ' + currentHours + ':' + date.getMinutes();
 let EmployeesArray = [{
-        'bild-src': 'img/software-engineer.png',
+        'bild-src': 'img/dominik.png',
         'e-mail': 'dominik.graf2001@gmail.com',
         'name': 'Dominik Graf',
         'position': 'Software Developer'
     },
     {
-        'bild-src': 'img/software-engineer.png',
+        'bild-src': 'img/armin.jpg',
         'e-mail': 'zachotzki86@gmail.com',
         'name': 'Armin Zachotzki',
         'position': 'Software Developer'
@@ -24,11 +24,11 @@ let EmployeesArray = [{
  * 
  */
 async function createTask() {
-    let title = document.getElementById('add_task_title');
-    let date = document.getElementById('add_task_date');
-    let catergory = document.getElementById('add_task_category');
-    let urgency = document.getElementById('add_task_urgency');
-    let text = document.getElementById('add_task_description');
+    let title = document.getElementById('title');
+    let date = document.getElementById('date');
+    let catergory = document.getElementById('catergory');
+    let text = document.getElementById('text');
+    let urgency = document.getElementById('urgency');
     let task = {
         'title': title.value,
         'date': date.value,
@@ -54,29 +54,15 @@ async function createTask() {
         alert('Please enter a Date!')
     } else {
         allTasks.push(task);
-        // await backend.setItem('allTasks', JSON.stringify(allTasks));
-        title.value = '';
+        await backend.setItem('allTasks', JSON.stringify(allTasks));
+        title.value = ''
         date.value = '';
         catergory.value = '';
         text.value = '';
         urgency.value = '';
         assignEmployee = '';
-        //location.reload();
+        location.reload();
     }
-}
-
-/**
- * This function deletes all the values of all inputfields and also of the array with the assigned employees
- */
-function clearTask() {
-    document.getElementById('add_task_title').value = '';
-    document.getElementById('add_task_date').value = '';
-    document.getElementById('add_task_category').value = 'Marketing';
-    document.getElementById('add_task_description').value = 'ASd';
-    document.getElementById('add_task_date').value = '';
-    document.getElementById('add_task_urgency').value = 'High';
-    profile_pictures.innerHTML = '';
-
 }
 
 /**
@@ -100,4 +86,75 @@ function Employees() {
                 </div>
             </div>`;
     }
+}
+
+
+// When the user clicks on Id popup(number), it opens the popup
+function popup(i) {
+    let popup = document.getElementById("myPopup" + i);
+    popup.classList.toggle("show");
+}
+
+// When the user clicks on Id popup(number), it closes the popup
+function close_popup(i) {
+    let popup = document.getElementById("myPopup" + i);
+    popup.classList.remove("show");
+}
+
+/**
+ * 
+ * @param {number} i //This paramter gives each employee its own number so that the funtion scope is only for the seleted employee 
+ * The function creates a HTML element for the selected Employee and pushes is value in an array so that in can be accsessed from the backend. 
+ */
+//  let staff_member = document.getElementById(`employee_${i}`);
+function assigningEmployees(i) {
+    let profile_pictures = document.getElementById('profile_pictures');
+    profile_pictures.innerHTML += `
+     <div class="popup" onclick="popup(${i})">
+        <img src="${EmployeesArray[i]['bild-src']}" class="profile-picture">
+        <div class="popuptext" id="myPopup${i}">
+            ${EmployeesArray[i]['name']}<br>
+            ${EmployeesArray[i]['position']}<br>
+            ${EmployeesArray[i]['e-mail']}
+        </div>
+     </div>
+    `;
+    assignedEmployees.push(EmployeesArray[i]);
+}
+
+/**
+ * This function opens a Modal overlay
+ * 
+ */
+function openModal() {
+    let modal = document.getElementById('modal');
+    let overlay = document.getElementById('overlay');
+    modal.classList.remove('d-none')
+    overlay.classList.remove('d-none')
+    Employees();
+}
+
+/**
+ * This function closes the Modal overlay
+ * 
+ */
+function closeModal() {
+    let modal = document.getElementById('modal');
+    let overlay = document.getElementById('overlay');
+    modal.classList.add('d-none')
+    overlay.classList.add('d-none')
+}
+
+
+/**
+ * This function deletes all the values of all inputfields and also of the array with the assigned employees
+ */
+function clearTask() {
+    document.getElementById('title').value = '';
+    document.getElementById('date').value = '';
+    document.getElementById('catergory').value = '';
+    document.getElementById('text').value = '';
+    document.getElementById('urgency').value = '';
+    profile_pictures.innerHTML = '';
+
 }

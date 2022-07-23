@@ -9,13 +9,16 @@
     <link id="icon" rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/backlog.css">
     <script src="./js/main.js"></script>
+    <script src="js/backlog.js"></script>
+    <script src="js/mini_backend.js"></script>
 </head>
 
 <body>
 
 
-    <body onload="init()">
+    <body onload="init(), loadBacklog()">
         <div w3-include-html="templates/sidebar.html"></div>
         <!--Nur als Test mal etwas reingefügt, das mit dem Tempaltes funktioniert noch nicht zu 100%-->
         <!--Mit dem Tempaltes wir es einfach überdekt, deswegen hat es  aktuell auch noch nach oben diesen abstand da einen Div dahinter ist-->
@@ -26,6 +29,16 @@
                     <p>Learning Management System Project</p>
                 </div>
             </div>
+            <div class="mainContainer heading1 clr-blue" id="main_container">
+                <div class="fontS20 hideCont"><b>ASSIGNED TO</b></div>
+                <div class="categoryMain fontS20 hideCont">CATEGORY</div>
+                <div class="detailsMain fontS20 hideCont">DETAILS</div>
+                <div class="dueDateMain fontS20 hideCont">DUE DATE</div>
+            </div>
+        </div>
+        <!-- start the main container -->
+
+        <div class="backlog_container" id="backlog_container"></div>
         </div>
     </body>
 
