@@ -1,4 +1,4 @@
-setURL('http://gruppe-281.developerakademie.net/smallest_backend_ever');
+setURL('https://gruppe-281.developerakademie.net/smallest_backend_ever');
 let boardArray = [];
 
 
