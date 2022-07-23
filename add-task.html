@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Task</title>
     <link id="icon" rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="../style/fonts.css">
-    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/add-task.css">
     <script src="./js/main.js"></script>
     <script src="js/addTask.js"></script>
 </head>
@@ -30,13 +31,13 @@
         </div>
 
         <!-- Container für die Eingaben -->
-        <form onsubmit="addTask()">
+        <form onsubmit="createTask();return false;">
             <div class="add-task-container bg">
 
                 <!-- Titel -->
                 <div class="add-task-content">
                     <div>
-                        <h3>TITLE</h3>
+                        <h4>TITLE</h4>
                     </div>
                     <div>
                         <input class="add-takt-input-select" id="add_task_title" placeholder="Your Title...">
@@ -46,7 +47,7 @@
                 <!-- Datum -->
                 <div class="add-task-content">
                     <div>
-                        <h3>DUE DATE</h3>
+                        <h4>DUE DATE</h4>
                     </div>
                     <div>
                         <input class="add-taskt-input-select" id="add_task_date" type="date">
@@ -56,7 +57,7 @@
                 <!-- Kategorie -->
                 <div class="add-task-content">
                     <div>
-                        <h3>CATEGORY</h3>
+                        <h4>CATEGORY</h4>
                     </div>
                     <div>
                         <select class="add-taskt-input-select" id="add_task_category" placeholder="CATEGORY">
@@ -70,7 +71,7 @@
                 <!-- Gewichtigkeit der Relevanz -->
                 <div class="add-task-content">
                     <div>
-                        <h3>URGENCY</h3>
+                        <h4>URGENCY</h4>
                     </div>
                     <div>
                         <select class="add-taskt-input-select" id="add_task_urgency">
@@ -85,25 +86,26 @@
                 <!-- Beschreibung -->
                 <div class="add-task-content">
                     <div>
-                        <h3>DESCRIPTION</h3>
+                        <h4>DESCRIPTION</h4>
                     </div>
                     <div>
-                        <textarea class="add-takt-input-select" name="Description" is="add_task_description" cols="40" rows="5"></textarea>
+                        <textarea placeholder="
+                        Your description ..." class="add-takt-input-select" is="add_task_description" cols="40" rows="5"></textarea>
                     </div>
                 </div>
 
                 <!-- Zuweisung an -->
                 <div class="add-task-content">
                     <div>
-                        <h3>ASSIGNED TO</h3>
+                        <h4>ASSIGNED TO</h4>
                     </div>
                     <div>
                         <div class="assigned-to-imgs">
-                            <img class="add-taskk-img" id="add_task_profile" src="img/example-img.PNG" alt=""><img class="add-task-plus" src="img/icon plus.png" alt="">
+                            <button class="add-avatar" id="modal-body"><img class="add-task-plus" id="modal-body" src="img/icon plus.png" alt="" ></button>
                         </div>
                         <div>
-                            <button onclick="clearTask()">Clear</button>
-                            <button onclick="createTask()">CREATE TASK</button>
+                            <button class="action-button" onclick="clearTask()">Clear</button>
+                            <button class="action-button" onclick="createTask()">CREATE TASK</button>
                         </div>
                     </div>
                 </div>

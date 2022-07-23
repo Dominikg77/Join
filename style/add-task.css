@@ -1,0 +1,64 @@
+.add-task-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 332px;
+    margin-top: 32px;
+    height: 450px;
+    width: 850px;
+    border-radius: 29px;
+}
+
+.add-task-content {
+    width: 330px;
+    margin-left: 60px;
+}
+
+.add-taskk-img {
+    border-radius: 144px;
+    width: 60px;
+    height: 60px !important;
+    object-fit: cover;
+}
+
+.add-avatar {
+    border: none;
+    cursor: pointer;
+}
+
+.add-task-plus {
+    width: 35px;
+    height: 35px !important;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.assigned-to-imgs {
+    display: flex;
+    align-items: center;
+}
+
+.add-takt-input-select {
+    width: 100%;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #22318B;
+}
+
+.action-button {
+    cursor: pointer;
+    background-color: #22318B;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+}

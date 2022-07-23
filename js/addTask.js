@@ -71,9 +71,10 @@ async function createTask() {
 function clearTask() {
     document.getElementById('add_task_title').value = '';
     document.getElementById('add_task_date').value = '';
-    document.getElementById('add_task_category').value = '';
-    document.getElementById('add_task_description').value = '';
-    document.getElementById('add_task_urgency').value = '';
+    document.getElementById('add_task_category').value = 'Marketing';
+    document.getElementById('add_task_description').value = 'ASd';
+    document.getElementById('add_task_date').value = '';
+    document.getElementById('add_task_urgency').value = 'High';
     profile_pictures.innerHTML = '';
 
 }
