@@ -58,7 +58,7 @@ function renderTemplate(info, index) {
                     <b>CATEGORY</b>
                 </div>
                 <div class="catogeryTasks">
-                    <h3>${info['catergory']}</h3>
+                    <h4>${info['catergory']}</h4>
                 </div>
                 <div class="responsive fontS20">
                     <b>DETAILS</b>
@@ -88,7 +88,7 @@ function renderTemplate(info, index) {
                     <div class="deleteContainer" onclick="deleteContainer(${index})">
                     <img class="trash-bin" src="https://img.icons8.com/ios/50/000000/trash--v1.png"/>
                     </div>
-                    <img class="pushToBoard" src="img/arrowToBoard.ico" onclick="pushToBoard(${index})"> 
+                    <img class="pushToBoard" src="img/rechter-pfeil.png" onclick="pushToBoard(${index})"> 
             <div class="modal d-none" id="modalBacklog">
                <div class="modal-header">
                 <div class="modal-title">Available Employees</div>

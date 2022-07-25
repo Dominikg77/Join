@@ -3,9 +3,10 @@ body {
     overflow-y: hidden;
 }
 
-h3 {
+h4 {
     margin-block-start: 0;
     margin-block-end: 0;
+    font-size: 16px;
 }
 
 .d-none {
@@ -359,7 +360,9 @@ h3 {
 }
 
 .trash-bin {
-    width: 25px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
     transition: all 225ms ease-in-out;
 }
 
