@@ -157,13 +157,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: bold;
     font-family: 'Varela Round', sans-serif;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
+    height: 58px;
 }
 
 .btn-cancel {
     color: rgb(34, 49, 139);
     background-color: transparent;
+}
+
+.btn-cancel:hover {
+    color: rgb(34, 49, 139);
+    background-color: #fafafa;
 }
 
 .btn-create-task {
@@ -172,8 +178,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .btn-create-task:hover {
-    color: rgb(12, 17, 44);
-    background-color: rgb(34, 49, 139);
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 49, 139, 0.8);
 }
 
 .popup {
