@@ -1,0 +1,18 @@
+body {
+    font-family: 'PT Sans';
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+h1 {
+    color: rgb(34, 49, 139);
+}
+
+h2 {
+    color: rgb(34, 49, 139);
+}
+
+.impress-box {
+    margin-right: 450px;
+    margin-bottom: 64px;
+}
