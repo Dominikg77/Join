@@ -24,6 +24,7 @@ h1 {
     display: flex;
     justify-content: center !important;
     font-weight: bolder;
+    margin-left: 100px;
 }
 
 .boards {
@@ -493,16 +494,33 @@ h1 {
 
 /*Responsive*/
 
+@media(max-width: 1450px) {
+    .contentCont {
+        width: calc(100% - 200px);
+        min-width: 100%;
+    }
+    .content {
+        width: 1000px;
+        margin-left: -10px;
+    }
+}
+
 @media(max-width: 1200px) {
     .contentCont {
         width: calc(100% - 200px);
         min-width: 100%;
+    }
+    .content {
+        width: 650px;
     }
 }
 
 @media(max-width: 900px) {
     .tasks {
         max-width: 84%;
+    }
+    .content {
+        width: 450px;
     }
 }
 
@@ -517,7 +535,10 @@ h1 {
         margin-top: 24px !important;
     }
     .titel-1 {
-        margin-left: 50px;
+        margin-left: 80px;
+    }
+    .content {
+        width: 600px;
     }
 }
 
@@ -536,6 +557,10 @@ h1 {
     .board {
         margin-top: 2px;
         height: 36vh;
+    }
+    .content {
+        width: 600px;
+        margin-left: -75px;
     }
 }
 
@@ -577,9 +602,13 @@ h1 {
 
 @media(max-width: 400px) {
     .boards {
-        width: 90%;
+        width: 70%;
     }
     .board {
         height: 80vh;
+    }
+    .content {
+        width: 400px;
+        margin-left: -80px;
     }
 }
