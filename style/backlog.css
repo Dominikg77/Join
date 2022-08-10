@@ -534,4 +534,9 @@
         .employeeContainer img {
             margin: 0px 10px;
         }
+        @media (max-width: 775px) {
+            .titel-1 {
+                margin-left: 50px;
+            }
+        }
     }

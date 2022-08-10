@@ -349,6 +349,9 @@ h1 {
     .m-top {
         margin-top: 24px !important;
     }
+    .titel-1 {
+        margin-left: 50px;
+    }
 }
 
 @media(max-width: 620px) {

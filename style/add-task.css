@@ -381,10 +381,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .main-addTask {
         margin-bottom: 0px;
         margin-top: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     .profile-picture {
         max-width: 50px;
         max-height: 50px;
+        min-height: 100px;
     }
     .profile-pictures {
         margin-bottom: 0px;
@@ -403,6 +406,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
     .email {
         display: none;
+    }
+    .inputfield {
+        height: 45px;
+        font-size: 13px;
+        min-width: 200px
+    }
+    .styled-select select {
+        height: 45px;
+        font-size: 13px;
+        min-width: 200px
+    }
+    .textarea textarea {
+        height: 80px;
+        font-size: 13px;
+        min-width: 200px
+    }
+    label,
+    h2 {
+        margin: 8px 0px 8px 0px;
+    }
+    h2 {
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
     }
 }
 

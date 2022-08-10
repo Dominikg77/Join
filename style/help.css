@@ -5,7 +5,7 @@
 }
 
 .help-container {
-    width: 1000px;
+    width: 800px;
     padding: 20px;
     margin-top: 30px;
     border-radius: 10px;
@@ -62,12 +62,52 @@ h2 {
     border-left: 5px solid transparent !important;
 }
 
-p {
-    font-size: 18px !important;
-    font-weight: 400 !important;
+.help-container p {
+    font-size: 18px;
+    font-weight: 400;
     display: block;
     margin-block-start: 0.25em;
     margin-block-end: 0.25em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+@media(max-width: 1200px) {
+    body {
+        background-color: red;
+    }
+    .help-container {
+        width: 450px;
+    }
+}
+
+@media(max-width: 775px) {
+    h2 {
+        font-size: 18px;
+    }
+    .help-container p {
+        font-size: 13px !important;
+    }
+    .help-container {
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .headline-main {
+        margin-left: 50px;
+    }
+    .footer-text {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 550px) {
+    .help-container {
+        width: 350px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .help-container p {
+        font-size: 11px !important;
+    }
 }
