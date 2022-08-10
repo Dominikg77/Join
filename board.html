@@ -22,8 +22,6 @@
 
     <body onload="init(),loadBoard()">
         <div w3-include-html="templates/sidebar.html"></div>
-        <!--Nur als Test mal etwas reingefügt, das mit dem Tempaltes funktioniert noch nicht zu 100%-->
-        <!--Mit dem Tempaltes wir es einfach überdekt, deswegen hat es  aktuell auch noch nach oben diesen abstand da einen Div dahinter ist-->
         <div class="container">
             <div class="titel-1">
                 <h3>Board</h3>
@@ -34,41 +32,33 @@
 
             <!--Einzelne DIV-->
 
-            <div class="container-up">
 
-                <div  class="container-sub">
-                    <h2 onclick="createToDo()">
-                        TO DO
-                    </h2>
-                    <div class="inputs bg">
-                    </div>
+            <div class="content">
+
+                <div class="boards">
+                    TO DO
+                    <div class="board" id="toDo" ondrop="moveTo('toDo')" ondragover="allowDrop(event)"></div>
                 </div>
 
-                <div class="container-sub">
-                    <h2>
-                        IN PROGRESS
-                    </h2>
-                    <div class="inputs bg">
-                    </div>
+                <div class="boards">
+                    IN PROGRESS
+                    <div class="board" id="inProgress" ondrop="moveTo('inProgress')" ondragover="allowDrop(event)"></div>
                 </div>
 
-                <div class="container-sub">
-                    <h2>
-                        TESTING
-                    </h2>
-                    <div class="inputs bg">
-                    </div>
+                <div class="boards">
+                    TESTING
+                    <div class="board" id="testing" ondrop="moveTo('testing')" ondragover="allowDrop(event)"></div>
                 </div>
 
-                <div class="container-sub">
-                    <h2>
-                        DONE
-                    </h2>
-                    <div class="inputs bg">
-                    </div>
+                <div class="boards">
+                    DONE
+                    <div class="board" id="done" ondrop="moveTo('done')" ondragover="allowDrop(event)"></div>
                 </div>
 
             </div>
+
+        </div>
+
 
         </div>
     </body>

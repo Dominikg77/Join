@@ -88,3 +88,36 @@ Welcome animation
     animation: 225ms ease-in-out;
     -webkit-animation: 225ms ease-in-out;
 }
+
+@media(max-width: 1200px) {
+    .animate {
+        width: 500px;
+    }
+    .animate p {
+        font-size: 18px;
+    }
+    .animate a {
+        font-size: 22px;
+    }
+    .animate img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .animate {
+        width: 300px;
+        top: 200px;
+    }
+    .animate p {
+        font-size: 14px;
+    }
+    .animate a {
+        font-size: 16px;
+    }
+    .animate img {
+        width: 15px;
+        height: 15px;
+    }
+}

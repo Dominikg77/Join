@@ -9,7 +9,7 @@
     border-radius: 10px;
     margin-bottom: 50px;
     position: relative;
-    margin-right: 30px;
+    margin-right: 50px;
     margin-left: -10px;
 }
 
@@ -147,8 +147,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .buttons img {
-    width: 80px !important;
-    height: 80px !important;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
 }
 
@@ -334,7 +334,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* Resposive styles */
 
-@media(max-width:1275px) {
+@media(max-width:1450px) {
     .row {
         flex-direction: column;
         align-items: center;
@@ -359,6 +359,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 }
 
+@media(max-width:775px) {
+    .container {
+        margin-left: 50px;
+    }
+}
+
 @media(max-width:650px) {
     .border {
         width: 43px;
@@ -369,14 +375,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media(max-width:530px) {
+    body {
+        overflow-x: hidden;
+    }
+    .main-addTask {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .profile-picture {
+        max-width: 50px;
+        max-height: 50px;
+    }
     .profile-pictures {
-        min-height: 220px;
+        margin-bottom: 0px;
     }
     .border {
         width: 41px;
     }
-    .buttons>img {
-        height: 50px;
+    .buttons img {
+        width: 30px;
+        height: 30px;
+    }
+    .btn {
+        font-size: 10px;
+        height: 40px;
+        padding: 5px;
     }
     .email {
         display: none;
