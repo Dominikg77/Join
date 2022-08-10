@@ -37,6 +37,7 @@
         align-items: center;
         margin-top: 75px;
         margin-bottom: 25px;
+        margin-left: 65px;
     }
     
     .categoryMain {
@@ -155,10 +156,6 @@
         left: 0;
         margin-left: 310px;
     }
-    /* .ctg {
-    width: 65%;
-    text-align: left;
-} */
     
     .detailsTasks {
         position: absolute;
@@ -198,31 +195,16 @@
         transition: all 225ms ease-in-out;
     }
     
-    *
-    /* .pencil1:hover {
-    transform: scaleX(1.1)scaleY(1.1) translateY(5px);
-    transition: all 225ms ease-in-out;
-    text-shadow: 6px -8px 2px grey;
-}
-
-.pencil3:hover {
-    transform: scaleX(1.1)scaleY(1.1) translateY(5px);
-    transition: all 225ms ease-in-out;
-    text-shadow: 6px -8px 2px grey;
-} */
-    
     .pencil2 {
         width: 15px;
         position: absolute;
         top: -20px;
         cursor: pointer;
-        /* transition: all 225ms ease-in-out; */
     }
     
     .pencil3 {
         width: 15px;
         cursor: pointer;
-        /* transition: all 225ms ease-in-out; */
         position: absolute;
         left: 10px;
     }
@@ -413,6 +395,7 @@
             margin-top: 70px;
             transition: all 115ms ease-in-out;
             margin-bottom: 0;
+            font-size: 18px;
         }
         .assignedToTasks {
             position: absolute;

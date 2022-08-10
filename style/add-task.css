@@ -5,16 +5,18 @@
 .main-addTask {
     margin: 15px;
     padding: 15px;
+    padding-left: 30px;
     border-radius: 10px;
     margin-bottom: 50px;
     position: relative;
-    margin-right: 20px;
+    margin-right: 30px;
+    margin-left: -10px;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
 }
 
 .input {
