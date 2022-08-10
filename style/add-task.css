@@ -387,7 +387,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .profile-picture {
         max-width: 50px;
         max-height: 50px;
-        min-height: 100px;
     }
     .profile-pictures {
         margin-bottom: 0px;
@@ -424,6 +423,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
     label,
     h2 {
+        font-size: 10px;
         margin: 8px 0px 8px 0px;
     }
     h2 {
