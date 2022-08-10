@@ -1,74 +1,323 @@
-body {
-    margin-top: 0px;
-    font-family: 'PT Sans';
+.d-none {
+    display: none !important;
 }
 
-.sidelbarMenu {
-    position: fixed;
-    background-color: rgb(34, 49, 139);
-    color: white;
+.header {
+    display: block;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    width: 300px;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: none;
+    background-color: #22318B;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
 }
 
-ul {
-    list-style: none;
-    font-size: 24px;
-    font-weight: bolder;
-    text-transform: uppercase;
+.header-img {
+    display: none;
+    width: 40px;
+}
+
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.mainInner {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.mainInner div {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+
+#sidebarMenu {
     display: flex;
-    flex-direction: column;
-    padding-right: 45px;
+    justify-content: center;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    top: -60px;
+    /*  transform: translateX(-250px); */
+    transition: transform 250ms ease-in-out;
+    background-color: #22318B;
+    z-index: 9;
 }
 
-.sidelbarMenu a {
-    color: white;
-    text-decoration: none;
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
 }
 
-.sidebar-menu-list {
-    margin-top: 120px;
-}
-
-#img {
-    margin-bottom: 15px;
-    width: 80px;
-    height: 100px;
-    object-fit: cover;
-}
-
-li {
-    margin-top: 25px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-left: 5px solid transparent;
-    transition: all 225ms ease-in-out;
+.sidebarMenuInner li {
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
     cursor: pointer;
+    padding: 20px 20px 20px 0px;
 }
 
-li:hover {
-    border-left: 5px solid white;
+.sidebarMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.sidebarMenuInner li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+}
+
+input[type="checkbox"]:checked~#sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+    display: none;
+    position: fixed;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+.border-left {
+    width: 100%;
+    border-left: 4px transparent white;
+    transition: all 155ms ease-in-out;
+}
+
+.border-left:hover {
+    border-left: 4px solid white;
+    transition: all 155ms ease-in-out;
+}
+
+.responsive-mobile {
+    display: block;
+    padding-left: 20px;
+}
+
+.hide-img a {
+    display: none !important;
 }
 
 .footer {
     position: absolute;
-    bottom: 20px;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    margin-right: 1vw;
 }
 
-.footer-links a {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-weight: bolder;
-    font-size: 18px;
+a {
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    text-decoration: none;
+    color: #FFF;
 }
 
-@media (max-width: 850px) {
-    .sidelbarMenu {
-        height: 150px;
+.width {
+    width: 80vw;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+/**Animation to impressum on hover*/
+
+.impressum {
+    color: blue !important;
+}
+
+.impressum::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 225ms;
+    margin-left: 50px;
+}
+
+.impressum:hover::after {
+    width: 370px;
+    margin-left: 50px;
+}
+
+.trash-bin::after {
+    margin-left: 120px;
+}
+
+.trash-bin:hover::after {
+    width: 60px !important;
+    margin-left: 120px !important;
+}
+
+.icons::after {
+    margin: 0;
+}
+
+.icons:hover::after {
+    width: 125px;
+    margin: 0;
+}
+
+.photos:hover::after {
+    width: 50px !important;
+}
+
+.quelle::after {
+    margin-left: 50px;
+}
+
+.quelle:hover::after {
+    width: 180px;
+    margin-left: 50px;
+}
+
+
+/* Border-Bottom*/
+
+.border-btm {
+    border-bottom: 2px solid transparent !important;
+}
+
+.border-btm:hover {
+    border-bottom: 2px solid white !important;
+    border-left: none;
+}
+
+
+/**Animation to impressum on hover till here*/
+
+@media (max-width: 775px) {
+    .width {
+        width: 90vw;
+    }
+}
+
+@media(max-width: 1200px) {
+    #sidebarMenu {
+        width: 200px !important;
+    }
+}
+
+@media (max-width: 775px) {
+    .sidebarIconToggle {
+        display: block;
+    }
+    .hide-img {
+        display: flex;
+    }
+    .hide-img img {
+        width: 32px;
+        padding-top: 20px;
+    }
+    .hide-img a {
+        display: flex !important;
+    }
+    .header {
         width: 100%;
     }
+    #sidebarMenu {
+        transform: translateX(-100%);
+        width: 100% !important;
+    }
+    .header-img {
+        display: flex;
+    }
+    .responsive-mobile {
+        display: none;
+    }
+}
+
+.clr-blue {
+    color: #22318B;
 }

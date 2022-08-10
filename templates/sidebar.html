@@ -13,39 +13,32 @@
 
 <body>
 
-    <div>
+    <div class="header hide-img">
+        <a href="join.html"><img class="header-img" src="img/logo.png" alt=""></a>
+    </div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+              <div class="spinner diagonal part-1"></div>
+              <div class="spinner horizontal"></div>
+              <div class="spinner diagonal part-2"></div>
+            </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li class="border-left responsive-mobile">
+                <a href="join.html"><img class="responsive-mobile" src="img/logo.png"></a>
+            </li>
+            <li class="border-left"><a href="board.html">Board</a></li>
+            <li class="border-left"><a href="backlog.html">Backlog</a></li>
+            <li class="border-left"><a href="add-task.html">Add Task</a></li>
+            <li class="border-left "><a href="help.html">Help</a></li>
+        </ul>
 
 
-        <div class="sidelbarMenu">
-            <div class="sidebar-menu-list">
-                <ul>
-                    <li>
-                        <a href="join.html"> <img id="img" src="img/logo.png"> </a>
-                    </li>
-                    <li>
-                        <a href="board.html"> Board</a>
-                    </li>
-                    <li>
-                        <a href="backlog.html"> Backlog</a>
-                    </li>
-                    <li>
-                        <a href="add-task.html">Add Task</a>
-                    </li>
-                    <li>
-                        <a href="help.html">Help</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer">
-                <div class="footer-links">
-                    <a href="/templates/imprint.html" target="_blank">Impressum</a>
-                    <a href="#">Datenschutz</a>
-                </div>
-
-            </div>
+        <div class="footer">
+            <a class="border-left border-btm" href="impressum.html">Impressum</a>
+            <a class="border-left border-btm" href="datenschutz.html">Datenschutz</a>
         </div>
-
+    </div>
 
 </body>
 
