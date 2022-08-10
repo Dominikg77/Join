@@ -65,3 +65,10 @@ li:hover {
     font-weight: bolder;
     font-size: 18px;
 }
+
+@media (max-width: 850px) {
+    .sidelbarMenu {
+        height: 150px;
+        width: 100%;
+    }
+}

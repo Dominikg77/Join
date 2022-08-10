@@ -1,0 +1,89 @@
+.titel-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.my:first-of-type {
+    animation: wakeup 1s ease-in-out;
+}
+
+.animate {
+    top: 300px;
+    margin-top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    animation: reveal 5s ease-in-out;
+}
+
+
+/*
+Welcome animation
+*/
+
+@keyframes reveal {
+    0% {
+        margin-top: -60px;
+        opacity: 0;
+    }
+    20% {
+        margin-top: 0px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    50% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wakeup {
+    0% {
+        height: 60%;
+        top: 255px;
+        opacity: 0;
+    }
+    100% {
+        height: 10%;
+        top: 65px;
+        opacity: 1;
+    }
+}
+
+.animate p {
+    font-size: 24px;
+    color: black;
+    font-weight: 300;
+}
+
+.animate img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-left: 8px;
+    margin-right: 12px;
+}
+
+.animate a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 28px;
+}
+
+.animate a:hover {
+    border-bottom: 2px solid blue;
+    animation: 225ms ease-in-out;
+    -webkit-animation: 225ms ease-in-out;
+}
