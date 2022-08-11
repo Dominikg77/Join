@@ -1,6 +1,5 @@
     body {
         scroll-behavior: smooth;
-        overflow-y: hidden;
     }
     
     h3 {
@@ -442,7 +441,7 @@
             flex-direction: column;
             margin-top: 0px !important;
             margin-bottom: 50px !important;
-            margin-left: 22px !important;
+            margin-left: 0px !important;
             margin-top: 70px;
             transition: all 115ms ease-in-out;
             margin-bottom: 0;
@@ -534,9 +533,19 @@
         .employeeContainer img {
             margin: 0px 10px;
         }
-        @media (max-width: 775px) {
-            .titel-1 {
-                margin-left: 50px;
-            }
+    }
+    
+    @media (max-width: 775px) {
+        .titel-1 {
+            margin-left: 50px;
+        }
+        .todoContainer {
+            margin-left: 22px !important;
+        }
+    }
+    
+    @media(max-width: 450px) {
+        .todoContainer {
+            margin-left: 18px !important;
         }
     }

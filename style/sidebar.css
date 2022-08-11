@@ -168,8 +168,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 
 .border-left {
     width: 100%;
-    border-left: 4px transparent white;
-    transition: all 155ms ease-in-out;
+    border-left: 4px transparent transparent;
 }
 
 .border-left:hover {

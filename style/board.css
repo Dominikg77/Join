@@ -2,7 +2,6 @@ body {
     margin: 0;
     height: 100%;
     display: flex;
-    overflow-y: hidden;
     /* Hide vertical scrollbar */
 }
 
@@ -25,6 +24,7 @@ h1 {
     justify-content: center !important;
     font-weight: bolder;
     margin-left: 100px;
+    height: 75vh;
 }
 
 .boards {
@@ -42,7 +42,6 @@ h1 {
     margin-top: 8px;
     height: 75vh;
     border-radius: 5px;
-    background-color: rgb(238, 238, 238);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -522,6 +521,9 @@ h1 {
     .content {
         width: 450px;
     }
+    .boards {
+        font-size: 13px;
+    }
 }
 
 @media(max-width: 775px) {
@@ -560,7 +562,7 @@ h1 {
     }
     .content {
         width: 600px;
-        margin-left: -75px;
+        margin-left: -100px;
     }
 }
 
@@ -600,7 +602,7 @@ h1 {
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 450px) {
     .boards {
         width: 70%;
     }
@@ -609,6 +611,6 @@ h1 {
     }
     .content {
         width: 400px;
-        margin-left: -80px;
+        margin-left: -90px;
     }
 }
