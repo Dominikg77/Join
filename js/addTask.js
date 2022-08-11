@@ -61,9 +61,13 @@ async function createTask() {
         text.value = '';
         urgency.value = '';
         assignEmployee = '';
-        location.reload();
+        setTimeout(() => {
+            location.reload();
+        }, 2000);
+        document.getElementById(`done`).classList.remove(`d-none`);
     }
 }
+
 
 /**
  * This function accesesses the available Employees and renders each profile in its own HTML element.
