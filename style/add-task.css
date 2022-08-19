@@ -7,7 +7,7 @@
         padding: 15px;
         padding-left: 30px;
         border-radius: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         position: relative;
         margin-right: 50px;
         margin-left: -10px;
@@ -22,7 +22,7 @@
     .input {
         display: flex;
         flex-direction: column;
-        width: 450px;
+        width: 45%;
         position: relative;
     }
     
@@ -95,13 +95,13 @@
     }
     
     .assingments {
-        width: 450px;
+        width: 45%;
     }
     
     .textarea {
         display: flex;
         flex-direction: column;
-        width: 450px;
+        width: 45%;
         border-radius: 5px;
         white-space: pre;
     }
@@ -330,7 +330,7 @@
     }
     /* Resposive styles */
     
-    @media(max-width:1450px) {
+    @media(max-width:1200px) {
         .row {
             flex-direction: column;
             align-items: center;
@@ -359,9 +359,6 @@
         }
         .profile-picture {
             max-width: 90px;
-        }
-        .container {
-            padding-top: 40px;
         }
     }
     
