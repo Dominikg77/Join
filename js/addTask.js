@@ -7,7 +7,7 @@ currentHours = ("0" + currentHours).slice(-2);
 let today = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear() + ' || ' + currentHours + ':' + date.getMinutes();
 let EmployeesArray = [{
         'bild-src': 'img/dominik.png',
-        'e-mail': 'dominik.graf2001@gmail.com',
+        'e-mail': 'info@doiminik-graf.ch',
         'name': 'Dominik Graf',
         'position': 'Software Developer'
     },
