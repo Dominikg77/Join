@@ -54,17 +54,17 @@ function renderTemplate(info, index) {
                 <div class="employeeContainer" id="employeeContainer${index}">
                 </div>
                 </div>
-                <div class="responsive fontS20">
+                <div class="responsive fontS20 category">
                     <b>CATEGORY</b>
                 </div>
                 <div class="catogeryTasks">
                     <h4>${info['catergory']}</h4>
                 </div>
-                <div class="responsive fontS20">
+                <div class="responsive fontS20 details">
                     <b>DETAILS</b>
                 </div>
                 <div class="detailsTasks flipped">
-                <img src="img/pencil.png" class="pencil1">
+                <img src="img/pencil.png" class="pencil1"  >
                     <div class="d-none change" id="textEditCont${index}">
                         <textarea class="inputField" id="textEdit${index}"></textarea>
                         <div class="buttons">
@@ -74,7 +74,7 @@ function renderTemplate(info, index) {
                     </div>
                     <div class="p-top" id="detailTask${index}" onclick="changeContainer(${index})">${info['text']}</div> 
                 </div> 
-                <div class="responsive fontS20">
+                <div class="responsive fontS20 due-date">
                     <b>Due Date</b>
                 </div>
                 <div class="dueDateTasks" onclick="changeDate(${index})">

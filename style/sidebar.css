@@ -168,7 +168,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 
 .border-left {
     width: 100%;
-    border-left: 4px transparent transparent;
+    border-left: 4px solid transparent;
 }
 
 .border-left:hover {
@@ -188,7 +188,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 .footer {
     position: absolute;
     display: flex;
-    right: 0;
+    right: 0%;
     bottom: 0;
     margin-right: 1vw;
 }
@@ -266,6 +266,7 @@ a {
 
 .border-btm {
     border-bottom: 2px solid transparent !important;
+    border-left: none;
 }
 
 .border-btm:hover {
@@ -285,6 +286,10 @@ a {
 @media(max-width: 1200px) {
     #sidebarMenu {
         width: 200px !important;
+    }
+    .footer {
+        flex-direction: column;
+        right: 25%;
     }
 }
 

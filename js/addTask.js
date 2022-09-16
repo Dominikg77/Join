@@ -17,6 +17,24 @@ let EmployeesArray = [{
         'name': 'Armin Zachotzki',
         'position': 'Software Developer'
     },
+    {
+        'bild-src': 'img/uxui.jpg',
+        'e-mail': 'natalie.schimdt@hotmail.ch',
+        'name': 'Natalie Schmidt',
+        'position': 'UX/UI Designer'
+    },
+    {
+        'bild-src': 'img/scrum.jpg',
+        'e-mail': 'lea.meier@hotmail.ch',
+        'name': 'Lea Meier',
+        'position': 'Scrum Master'
+    },
+    {
+        'bild-src': 'img/productowner.jpg',
+        'e-mail': 'lisa.müller@hotmail.ch',
+        'name': 'Lisa Müller',
+        'position': 'Product owner'
+    },
 ];
 
 /**
@@ -61,10 +79,7 @@ async function createTask() {
         text.value = '';
         urgency.value = '';
         assignEmployee = '';
-        setTimeout(() => {
-            location.reload();
-        }, 2000);
-        document.getElementById(`done`).classList.remove(`d-none`);
+        snackbarAdded();
     }
 }
 
@@ -113,7 +128,8 @@ function close_popup(i) {
 //  let staff_member = document.getElementById(`employee_${i}`);
 function assigningEmployees(i) {
     let profile_pictures = document.getElementById('profile_pictures');
-    profile_pictures.innerHTML += `
+    if (!assignedEmployees.includes(EmployeesArray[i])) {
+        profile_pictures.innerHTML += `
      <div class="popup" onclick="popup(${i})">
         <img src="${EmployeesArray[i]['bild-src']}" class="profile-picture">
         <div class="popuptext" id="myPopup${i}">
@@ -123,7 +139,10 @@ function assigningEmployees(i) {
         </div>
      </div>
     `;
-    assignedEmployees.push(EmployeesArray[i]);
+        assignedEmployees.push(EmployeesArray[i]);
+    } else {
+        alert('The person is already assgined to the task')
+    }
 }
 
 /**
@@ -161,4 +180,27 @@ function clearTask() {
     document.getElementById('urgency').value = '';
     profile_pictures.innerHTML = '';
 
+}
+
+/**
+ * If Task sucessfuuly added to Backlog then snackbar will be showed
+ */
+function snackbarAdded() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function() { x.className = x.className.replace("show", ""); }, 3000);
+}
+
+/**
+ * If Task can't added to Backlog then snackbar will be showed
+ */
+function snackbarError() {
+    var x = document.getElementById("snackbar-error");
+    x.className = "show";
+    setTimeout(function() { x.className = x.className.replace("show", ""); }, 3000);
 }
