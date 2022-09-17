@@ -355,9 +355,7 @@
             margin-bottom: 5px;
         }
         .profile-picture {
-            min-height: 100px;
-        }
-        .profile-picture {
+            min-height: 60px;
             max-width: 90px;
         }
     }
@@ -388,22 +386,25 @@
         .heading1 {
             margin-top: 80px;
         }
+        .profile-picture {
+            min-height: 20px;
+            max-width: 50px;
+        }
     }
     
     @media(max-width:600px) {
         .main-addTask {
+            padding: 0px;
             margin-bottom: 0px;
             margin-top: 0px;
             padding-top: 5px;
             padding-bottom: 5px;
+            padding-left: 20px;
+            margin-right: 20px;
+            margin-left: -20px;
         }
         .container {
             padding-top: 100px;
-        }
-        .profile-picture {
-            max-width: 50px;
-            max-height: 50px;
-            min-height: 60px;
         }
         .profile-pictures {
             margin-bottom: 0px;

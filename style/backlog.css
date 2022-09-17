@@ -514,6 +514,6 @@
     
     @media(max-width: 450px) {
         .todoContainer {
-            margin-left: 18px !important;
+            margin-left: 0px !important;
         }
     }
